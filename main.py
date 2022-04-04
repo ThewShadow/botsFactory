@@ -2,18 +2,70 @@ import telebot
 import settings
 from telebot import types
 import os
-import redis as Redis
 import json
+import smtplib, ssl
+from service import db
+import email
+from email.mime.multipart import MIMEMultipart
+from email.mime.multipart import MIMEBase
+from email.mime.text import MIMEText
+from email import encoders
+from email.utils import formataddr
+import os
 
-redis = Redis.Redis(host='localhost', port=6379, db=0)
-
+db = db()
 bot = telebot.TeleBot(settings.TELEGRAM_API_TOKET)
 
-@bot.message_handler(content_types=['document'])
+def send_report(message):
+    port = 465  # For SSL
+    smtp_server = "smtp.gmail.com"
+    sender_email = "zvichayniy.vick@gmail.com"  # Enter your address
+    receiver_email = "futuredevback1@gmail.com"  # Enter receiver address
+    password = "etjadkyhtddcwgda"
+
+
+
+    attach = message['img']
+
+    SUBJECT = 'Пожежа'
+    msg = MIMEMultipart()
+    msg['Subject'] = SUBJECT
+    msg['From'] = formataddr(('FireReportBot', 'vichayniy.vick@gmail.com'))
+    msg['To'] = receiver_email
+
+    part = MIMEBase('application', "octet-stream")
+    part.set_payload(open(attach, "rb").read())
+    encoders.encode_base64(part)
+    part.add_header('Content-Disposition', f'attachment; filename="{attach}"')
+
+    msg.attach(part)
+
+    text_message = f'''
+        <b>Пожежа за координатами:</b> <p>{message['geo']}</p> \n
+        
+        <b>Інформація від відправника:</b> <p>{message['info']}</p>   
+    '''
+
+    msg.attach(MIMEText(text_message, "html"))
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+        server.login(sender_email, password)
+        server.sendmail(sender_email, receiver_email, msg.as_string())
+        os.remove(attach)
+
+@bot.message_handler(content_types=['document', 'photo'])
 def data_processing(message):
     chat_id = message.chat.id
-    file = message.document
+    state = db.get_state(message.chat.id)
+    if state != 'gettingimg':
+        bot.send_message(message.chat.id, 'Ви робите щось не те. Будь-ласка, перевірте інструкції.')
+        return
 
+    if message.document:
+        file = message.document
+    else:
+        file = message.photo
     try:
         """Скачивание файл по айди """
         r = bot.get_file(file.file_id)
@@ -41,33 +93,45 @@ def data_processing(message):
         file = open(path, 'rb')
         file.close()
 
-        but = types.KeyboardButton('Відправити')
+        db.set_img(chat_id, path)
+
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(but)
+
+        add_cancel_button(markup)
 
         bot.send_message(message.chat.id,
                          'По можливості додайте більше інформації про порушника (ПІБ, номер телефону і т.д)',
                          reply_markup=markup)
 
-        user_data = get_current_step(message.chat.id)
-        if type(user_data) is dict:
-            add_next_step(2, user_data, chat_id)
-        else:
-            return
-    except:
+        db.set_state(message.chat.id, 'gettinginfo')
+
+    except :
         bot.send_message(chat_id, 'Ойой, щось пішло не так і ми не змогли виконати Ваш запит((')
 
+
 @bot.message_handler(content_types=['location'])
-def fire_report(message):
-    chat_id = message.chat.id
-    add_next_step(1, {'step': 1}, chat_id)
-    bot.send_message(chat_id, 'Будь-ласка, прикріпіть фото пожежі як документ (Без стиснення)')
+def getting_location(message):
+    state = db.get_state(message.chat.id)
+    if state == 'gettinglocation':
+
+        coords = f'{message.location.latitude}, {message.location.longitude}'
+
+        db.set_geo(message.chat.id, coords)
+        db.set_state(message.chat.id, 'gettingimg')
+
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        add_cancel_button(markup)
+
+        bot.send_message(message.chat.id, 'Прикріпіть фотографію', reply_markup=markup)
+
 
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
-    markup = get_common_markup()
-    if message.text == '/start':
+    if message.chat.type == 'private':
+        db.user_create(message.chat.id)
+        db.set_state(message.chat.id, '')
+        markup = get_common_markup()
         username = message.from_user.first_name
         sticker = open('static/AnimatedSticker.tgs', 'rb')
         bot.send_message(message.chat.id, f'<b>Вітаю {username}</b>!', parse_mode='html', reply_markup=markup)
@@ -77,50 +141,77 @@ def welcome(message):
 @bot.message_handler(content_types=['text'])
 def send_message(message):
     chat_id = message.chat.id
-    user_data = get_current_step(chat_id)
-    if type(user_data) is dict and user_data['step'] == 2:
-        err = add_next_step(3, user_data, chat_id)
-        if err:
-            return
-        bot.send_message(message.chat.id, 'Натисніть "Відправити" для відправки репорту')
-    else:
-        if message.chat.type == 'private':
-            if message.text == 'Відправити':
-                markup = get_common_markup()
-                bot.send_message(chat_id, 'Репорт успішно відправлено! Дякуємо за допомогу!', reply_markup=markup)
-                redis.delete(chat_id)
-            else:
-                bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( Спробуйте щось інше, або скористайтесь кнопками')
+    if message.chat.type == 'private':
+        current_state = db.get_state(message.chat.id)
 
+        if message.text == 'Надіслати репорт' and current_state == 'reportcomplete':
+            db.set_state(chat_id, 'reportfinished')
+            report = db.get_current_report(chat_id)
+
+            send_report(report)
+
+            #bot.send_message(chat_id, 'Нажаль не вдалось відправити репорт по технічним причинам, '
+            #                              'нам дуже прикро( Спробуйте будь-ласка пізніше.')
+            #                              'нам дуже прикро( Спробуйте будь-ласка пізніше.')
+            markup = get_common_markup()
+            bot.send_message(chat_id, 'Репорт успішно відправлено! Дякуємо за допомогу!', reply_markup=markup)
+
+        elif message.text == 'Повідомити про пожежу':
+            db.set_geo(chat_id, '')
+            db.set_info(chat_id, '')
+            db.set_img(chat_id, '')
+            db.set_state(chat_id, 'gettinglocation')
+
+            button = types.KeyboardButton('Відправити ГЕО', request_location=True)
+            markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+            markup.add(button)
+
+            add_cancel_button(markup)
+
+            bot.send_message(message.chat.id, text='Створення репорту:')
+            bot.send_message(message.chat.id, text='Натисніть "Відправити ГЕО" для додавання геолокації пожежі', reply_markup=markup)
+
+        elif current_state == 'gettinginfo' and message.text != 'Відміна':
+            db.set_state(chat_id, 'reportcomplete')
+
+            db.set_info(chat_id, message.text)
+
+            next_button = types.KeyboardButton('Надіслати репорт')
+            markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+            markup.add(next_button)
+
+            add_cancel_button(markup)
+
+            bot.send_message(message.chat.id,
+                            'Репорт готовий, натисніть "Надіслати репорт для надсилання на репорту на пошту" ',
+                             reply_markup=markup)
+
+        elif current_state == 'reportfinished':
+            db.set_state(chat_id, '')
+
+        elif message.text == 'Відміна' and current_state:
+            db.set_state(chat_id, '')
+            db.delete_current_attach(chat_id)
+            db.set_geo(chat_id, '')
+            db.set_info(chat_id, '')
+            db.set_img(chat_id, '')
+
+            markup = get_common_markup()
+            bot.send_message(chat_id, 'Репорт відмінено', reply_markup=markup)
+
+        else:
+            bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( Спробуйте щось інше, або скористайтесь кнопками')
 
 def get_common_markup():
-    but1 = types.KeyboardButton('Повідомити про пожежу', request_location=True)
+    but1 = types.KeyboardButton('Повідомити про пожежу')
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(but1)
     return markup
 
+def add_cancel_button(markup):
+    cancel_button = types.KeyboardButton('Відміна')
+    markup.add(cancel_button)
 
-def get_current_step(chat_id):
-    try:
-        d = redis.get(chat_id)
-        if d:
-            d = json.loads(d)
-            return d
-    except TypeError:
-        redis.delete(chat_id)
-        bot.send_message(chat_id, 'Ойой, щось пішло не так і ми не змогли виконати Ваш запит((')
-        return
-
-
-def add_next_step(step, user_data, chat_id):
-    try:
-        user_data['step'] = step
-        redis.set(chat_id, json.dumps(user_data))
-        return 0
-    except:
-        redis.delete(chat_id)
-        bot.send_message(chat_id, 'Ойой, щось пішло не так і ми не змогли виконати Ваш запит((')
-        return 1
 
 if __name__ == '__main__':
     print('bot is started')

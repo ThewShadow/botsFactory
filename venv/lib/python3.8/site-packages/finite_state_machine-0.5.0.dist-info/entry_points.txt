@@ -1,0 +1,3 @@
+[console_scripts]
+fsm_draw_state_diagram=finite_state_machine.draw_state_diagram:main
+

@@ -14,29 +14,19 @@ from email.utils import formataddr
 import os
 
 db = db()
-bot = telebot.TeleBot(settings.TELEGRAM_API_TOKET)
+bot = telebot.TeleBot(settings.TELEGRAM_API_TOKEN)
+TEST = True
 
-def send_report(message):
-    port = 465  # For SSL
-    smtp_server = "smtp.gmail.com"
-    sender_email = "zvichayniy.vick@gmail.com"  # Enter your address
-    receiver_email = "futuredevback1@gmail.com"  # Enter receiver address
-    password = "etjadkyhtddcwgda"
-
-
-
-    attach = message['img']
-
-    SUBJECT = 'Пожежа'
+def send_report(chat_id, message):
     msg = MIMEMultipart()
-    msg['Subject'] = SUBJECT
-    msg['From'] = formataddr(('FireReportBot', 'vichayniy.vick@gmail.com'))
-    msg['To'] = receiver_email
+    msg['Subject'] = 'Пожежа'
+    msg['From'] = formataddr(('@FireReportBot', settings.SENDER_MAIL))
+    msg['To'] = settings.SENDER_MAIL
 
     part = MIMEBase('application', "octet-stream")
-    part.set_payload(open(attach, "rb").read())
+    part.set_payload(open(message['img'], "rb").read())
     encoders.encode_base64(part)
-    part.add_header('Content-Disposition', f'attachment; filename="{attach}"')
+    part.add_header('Content-Disposition', f'attachment; filename="{message["img"]}"')
 
     msg.attach(part)
 
@@ -45,14 +35,18 @@ def send_report(message):
         
         <b>Інформація від відправника:</b> <p>{message['info']}</p>   
     '''
-
     msg.attach(MIMEText(text_message, "html"))
 
+    receiver_email = db.get_email(chat_id)
+    if not receiver_email:
+        return
+
     context = ssl.create_default_context()
-    with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-        server.login(sender_email, password)
-        server.sendmail(sender_email, receiver_email, msg.as_string())
-        os.remove(attach)
+    with smtplib.SMTP_SSL(settings.SMTP_SERVER, settings.SMTP_PORT, context=context) as server:
+        server.login(settings.SENDER_MAIL, settings.SMTP_PASS)
+        server.sendmail(settings.SENDER_MAIL, receiver_email, msg.as_string())
+        os.remove(message["img"])
+
 
 @bot.message_handler(content_types=['document', 'photo'])
 def data_processing(message):
@@ -147,14 +141,16 @@ def send_message(message):
         if message.text == 'Надіслати репорт' and current_state == 'reportcomplete':
             db.set_state(chat_id, 'reportfinished')
             report = db.get_current_report(chat_id)
-
-            send_report(report)
-
-            #bot.send_message(chat_id, 'Нажаль не вдалось відправити репорт по технічним причинам, '
-            #                              'нам дуже прикро( Спробуйте будь-ласка пізніше.')
-            #                              'нам дуже прикро( Спробуйте будь-ласка пізніше.')
             markup = get_common_markup()
-            bot.send_message(chat_id, 'Репорт успішно відправлено! Дякуємо за допомогу!', reply_markup=markup)
+            try:
+                send_report(chat_id, report)
+
+                bot.send_message(chat_id, 'Репорт успішно відправлено! Дякуємо за допомогу!',
+                                 reply_markup=markup)
+            except:
+                bot.send_message(chat_id, 'Нажаль сталася помилка при надсилані репорту. Спробуйте пізніше',
+                                 reply_markup=markup)
+
 
         elif message.text == 'Повідомити про пожежу':
             db.set_geo(chat_id, '')
@@ -169,12 +165,12 @@ def send_message(message):
             add_cancel_button(markup)
 
             bot.send_message(message.chat.id, text='Створення репорту:')
-            bot.send_message(message.chat.id, text='Натисніть "Відправити ГЕО" для додавання геолокації пожежі', reply_markup=markup)
+            bot.send_message(message.chat.id, text='Натисніть "Відправити ГЕО" для '
+                                                   'додавання геолокації пожежі', reply_markup=markup)
 
-        elif current_state == 'gettinginfo' and message.text != 'Відміна':
+        elif current_state == 'gettingemail' and message.text != 'Відміна':
             db.set_state(chat_id, 'reportcomplete')
-
-            db.set_info(chat_id, message.text)
+            db.set_email(chat_id, message.text)
 
             next_button = types.KeyboardButton('Надіслати репорт')
             markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -183,13 +179,24 @@ def send_message(message):
             add_cancel_button(markup)
 
             bot.send_message(message.chat.id,
-                            'Репорт готовий, натисніть "Надіслати репорт для надсилання на репорту на пошту" ',
+                             'Репорт готовий, натисніть "Надіслати репорт" '
+                             'для надсилання на репорту на пошту" ',
+                             reply_markup=markup)
+
+        elif current_state == 'gettinginfo' and message.text != 'Відміна':
+            db.set_info(chat_id, message.text)
+            db.set_state(chat_id, 'gettingemail')
+
+            markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+            add_cancel_button(markup)
+
+            bot.send_message(message.chat.id, 'Вкажіть Ваш емейл:',
                              reply_markup=markup)
 
         elif current_state == 'reportfinished':
             db.set_state(chat_id, '')
 
-        elif message.text == 'Відміна' and current_state:
+        elif message.text == 'Відміна' and current_state != '':
             db.set_state(chat_id, '')
             db.delete_current_attach(chat_id)
             db.set_geo(chat_id, '')
@@ -200,7 +207,8 @@ def send_message(message):
             bot.send_message(chat_id, 'Репорт відмінено', reply_markup=markup)
 
         else:
-            bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( Спробуйте щось інше, або скористайтесь кнопками')
+            bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( '
+                                      'Спробуйте щось інше, або скористайтесь кнопками')
 
 def get_common_markup():
     but1 = types.KeyboardButton('Повідомити про пожежу')

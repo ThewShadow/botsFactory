@@ -91,7 +91,11 @@ def data_processing(message):
 
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 
+
+        button1 = types.KeyboardButton('Інформаця відсутня')
+        markup.add(button1)
         add_cancel_button(markup)
+
 
         bot.send_message(message.chat.id,
                          'По можливості додайте більше інформації про порушника (ПІБ, номер телефону і т.д)',
@@ -169,7 +173,8 @@ def send_message(message):
             bot.send_message(message.chat.id, text='Натисніть "Відправити ГЕО" для '
                                                    'додавання геолокації пожежі', reply_markup=markup)
 
-        elif current_state == 'gettingemail' and message.text != 'Відміна':
+        elif (current_state == 'gettingemail' and message.text != 'Відміна'):
+
             db.set_state(chat_id, 'reportcomplete')
             db.set_email(chat_id, message.text)
 
@@ -184,7 +189,10 @@ def send_message(message):
                              'для надсилання на репорту на пошту" ',
                              reply_markup=markup)
 
-        elif current_state == 'gettinginfo' and message.text != 'Відміна':
+        elif current_state == 'gettinginfo' \
+                and message.text != 'Відміна' \
+                or message.text == 'Інформаця відсутня':
+
             db.set_info(chat_id, message.text)
             db.set_state(chat_id, 'gettingemail')
 

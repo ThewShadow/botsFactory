@@ -1,4 +1,3 @@
-import sqlite3
 import logging
 import settings
 import os

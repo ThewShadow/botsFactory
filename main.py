@@ -59,7 +59,7 @@ def data_processing(message):
     if message.document:
         file = message.document
     else:
-        file = message.photo
+        file = message.photo[0]
     try:
         """Скачивание файл по айди """
         r = bot.get_file(file.file_id)
@@ -116,7 +116,8 @@ def getting_location(message):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         add_cancel_button(markup)
 
-        bot.send_message(message.chat.id, 'Прикріпіть фотографію', reply_markup=markup)
+        bot.send_message(message.chat.id, 'Прикріпіть фотографію як документ '
+                                          '(без стиснення) щоб не втратити якість', reply_markup=markup)
 
 
 
@@ -190,7 +191,7 @@ def send_message(message):
             markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
             add_cancel_button(markup)
 
-            bot.send_message(message.chat.id, 'Вкажіть Ваш емейл:',
+            bot.send_message(message.chat.id, 'Вкажіть Ваш "@мейл:',
                              reply_markup=markup)
 
         elif current_state == 'reportfinished':
@@ -208,7 +209,7 @@ def send_message(message):
 
         else:
             bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( '
-                                      'Спробуйте щось інше, або скористайтесь кнопками')
+                                      'Спробуйте щось інше, або скористайтесь командою /start')
 
 def get_common_markup():
     but1 = types.KeyboardButton('Повідомити про пожежу')

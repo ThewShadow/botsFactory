@@ -1,8 +1,11 @@
 import os
+import sys
 
-TELEGRAM_API_TOKEN = os.getenv('TELEGRAM_API_TOKEN')
-
-
+if len(sys.argv) > 1:
+    if sys.argv[1] == '-t':
+        TELEGRAM_API_TOKEN = '5147041361:AAGQM-EGM5J_jZmc2xVVafpsrmNjXUGK830'
+else:
+    TELEGRAM_API_TOKEN = os.getenv('TELEGRAM_API_TOKEN')
 
 DB_NAME = 'db'
 DB_HOST = 'localhost'
@@ -14,5 +17,5 @@ SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PASS = os.getenv('SMTP_PASS')
 SMTP_PORT = 465
 
-
-
+LIQPAY_PUBLIC_KEY = os.getenv('LIQPAY_PUBLIC_KEY')
+LIQPAY_PRIVATE_KEY = os.getenv('LIQPAY_PRIVATE_KEY')

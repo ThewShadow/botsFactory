@@ -4,16 +4,28 @@ import os
 import threading
 import psycopg2
 from psycopg2 import sql
+from liqpay import LiqPay
+import email
+from email.mime.multipart import MIMEMultipart
+from email.mime.multipart import MIMEBase
+from email.mime.text import MIMEText
+from email import encoders
+from email.utils import formataddr
+import smtplib
+import ssl
+import telebot
 
-logging.basicConfig(level=logging.DEBUG)
-logging.getLogger("urllib3").setLevel(logging.WARNING)
+logging.basicConfig(level=logging.WARNING)
+
 
 def db_name():
     return settings.DB_NAME
 
-class db():
+
+class DB():
     cursor = None
     conn = None
+
     def __init__(self):
         try:
             print('good')
@@ -27,9 +39,9 @@ class db():
 
     def connect(self):
         self.conn = psycopg2.connect(dbname=settings.DB_NAME,
-                                    user=settings.DB_USER,
-                                    host=settings.DB_HOST,
-                                    password=settings.DB_PASS)
+                                     user=settings.DB_USER,
+                                     host=settings.DB_HOST,
+                                     password=settings.DB_PASS)
 
         self.cursor = self.conn.cursor()
 
@@ -39,9 +51,6 @@ class db():
 
         if self.conn:
             self.conn.close()
-
-
-
 
     def create_tables(self):
 
@@ -69,6 +78,15 @@ class db():
                 );  
             ''')
 
+    def query(func):
+        def wrapper(self, id, param):
+            self.connect()
+            func(self, id, param)
+            self.conn.commit()
+            self.disconnect()
+
+        return wrapper
+
     def user_create(self, id):
         self.connect()
         self.cursor.execute('SELECT * FROM USERS WHERE id = %s ;', (id,))
@@ -84,6 +102,7 @@ class db():
             logging.info(f'user is create (id={id})')
             self.disconnect()
 
+
     def get_state(self, id):
         self.connect()
         self.cursor.execute('SELECT state FROM USERS WHERE id = %s ;', (id,))
@@ -97,15 +116,6 @@ class db():
         for str in self.cursor:
             self.disconnect()
             return str[0]
-
-    def query(func):
-        def wrapper(self, id, param):
-            self.connect()
-            func(self, id, param)
-            self.conn.commit()
-            self.disconnect()
-
-        return wrapper
 
     @query
     def set_geo(self, id, geo):
@@ -145,7 +155,6 @@ class db():
         self.disconnect()
         return report
 
-
     def delete_current_attach(self, id):
         self.connect()
         self.cursor.execute('SELECT img FROM USERS WHERE id = %s', (id,))
@@ -156,3 +165,70 @@ class db():
         self.disconnect()
 
 
+def send_report(data, mail):
+    if not mail:
+        return
+
+    msg = MIMEMultipart()
+    msg['Subject'] = 'Пожежа'
+    msg['From'] = formataddr(('@FireReportBot', settings.SENDER_MAIL))
+    msg['To'] = settings.SENDER_MAIL
+
+    part = MIMEBase('application', "octet-stream")
+    part.set_payload(open(data['img'], "rb").read())
+    encoders.encode_base64(part)
+    part.add_header('Content-Disposition', f'attachment; filename="{data["img"]}"')
+
+    msg.attach(part)
+
+    text_message = f'''
+        <b>Пожежа за координатами:</b> <p>{data['geo']}</p> \n
+
+        <b>Інформація від відправника:</b> <p>{data['info']}</p>   
+    '''
+    msg.attach(MIMEText(text_message, "html"))
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(settings.SMTP_SERVER, settings.SMTP_PORT, context=context) as server:
+        server.login(settings.SENDER_MAIL, settings.SMTP_PASS)
+        server.sendmail(settings.SENDER_MAIL, mail, msg.as_string())
+        os.remove(data["img"])
+
+
+def get_full_file_path(info):
+    return 'static/' + info.file_path
+
+def get_file_directory(info):
+    arr = info.file_path.split('/')
+    return 'static/' + arr[0]
+
+def save_document(info, binary):
+
+    """Создание папки для хранения файла"""
+    dir = get_file_directory(info)
+    if os.path.exists(dir) == False:
+        os.mkdir(dir)
+
+    """Запись бинарника в файл"""
+    path = get_full_file_path(info)
+    with open(path, 'wb') as f:
+        f.write(binary)
+
+    return path
+
+def get_doc_type(path):
+    type = path.split('.')
+    return type[len(type) - 1]
+
+
+def create_invoice(amount, public_key, private_key):
+    liqpay = LiqPay(public_key, private_key)
+    res = liqpay.api("request", {
+        "action": "invoice_bot",
+        "version": "3",
+        "amount": amount,
+        "currency": "UAH",
+        "phone": "380950000001"
+    })
+    if 'href' in res:
+        return res['href']

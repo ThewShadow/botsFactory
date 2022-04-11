@@ -1,0 +1,490 @@
+2022-04-08 12:03:29,683 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:03:33,592 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:03:38,186 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:03:42,530 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state ()
+2022-04-08 12:03:48,127 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:03:52,482 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:03:56,555 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:04:01,257 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:04:06,602 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:04:14,206 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:04:26,311 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:04:45,727 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:05:21,102 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:06:24,531 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:07:27,959 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:08:31,377 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:09:34,871 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:10:38,339 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:11:41,899 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:12:45,311 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:13:53,929 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:14:57,381 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:16:00,779 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:17:04,191 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:18:07,602 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:19:11,076 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:20:14,486 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:21:17,896 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:22:21,301 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:23:24,765 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:24:28,433 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:25:31,847 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:26:35,275 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:27:38,692 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:28:42,245 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:29:45,664 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:30:49,086 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:31:52,503 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:32:55,953 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:33:59,357 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:35:02,996 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:36:06,434 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:37:09,928 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:38:13,353 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:39:16,775 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:40:20,166 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:41:23,594 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:42:27,008 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:43:30,472 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:44:33,925 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:45:42,159 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:46:45,584 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:47:49,010 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:48:52,524 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:49:56,056 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:50:59,450 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:52:02,870 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:53:06,328 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:54:09,850 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:55:13,269 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:56:16,943 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:57:20,346 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:58:23,834 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 12:59:27,253 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:00:30,681 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:01:34,090 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:02:37,508 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:03:40,914 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:04:44,330 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:05:47,749 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:06:51,541 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:07:54,959 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:08:58,432 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:10:01,961 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:11:05,527 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:12:09,026 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:13:12,442 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:14:15,914 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:15:20,172 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:16:23,585 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:17:27,240 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:18:30,670 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:19:34,142 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:20:37,654 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:21:41,210 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:22:44,618 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:23:48,029 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:24:51,443 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:25:54,854 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:26:58,279 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:28:01,964 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:29:05,385 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:30:08,785 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:31:12,236 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:32:15,653 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:33:19,475 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:34:22,929 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:35:26,375 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:36:29,787 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:37:33,344 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:38:37,027 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:39:40,432 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:40:43,917 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:41:47,572 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:42:50,996 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:43:54,460 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:44:57,911 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:46:01,320 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:47:04,714 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:48:08,115 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:49:11,807 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:50:15,223 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:51:18,751 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:52:22,158 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:53:25,653 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:54:29,062 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:55:32,475 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:56:36,133 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:57:39,534 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:58:43,013 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 13:59:46,743 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:00:50,163 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:01:53,586 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:02:57,053 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:04:00,610 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:05:04,209 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:06:07,962 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:07:11,571 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:08:15,047 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:09:18,491 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:10:22,124 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:11:26,186 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:12:29,588 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:13:32,981 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:14:36,377 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:15:39,750 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:16:43,145 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:17:46,556 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:18:49,950 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:19:53,359 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:20:57,403 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-08 14:22:00,968 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+good
+bot is started
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 235, in <module>
+    bot.polling(none_stop=True)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 658, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 720, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 679, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/util.py", line 105, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/util.py", line 87, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 407, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), 
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 387, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+good
+bot is started
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 238, in <module>
+    bot.polling(none_stop=True)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 658, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 720, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 679, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/util.py", line 105, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/util.py", line 87, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 407, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), 
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 387, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+2022-04-09 05:40:45,987 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:41:49,323 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:42:52,820 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:43:56,285 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:44:59,650 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:46:03,040 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:50:12,020 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:50:15,870 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:50:20,465 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:50:26,573 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:50:32,683 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-09 05:50:44,795 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state ()
+INFO:root:user (id=502303328) moved to next state ()
+INFO:root:user (id=502303328) add geo ()
+good
+bot is started
+Traceback (most recent call last):
+  File "main.py", line 238, in <module>
+    bot.polling(none_stop=True)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 658, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 720, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/__init__.py", line 680, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/util.py", line 135, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/webnoid/venv/lib/python3.8/site-packages/telebot/util.py", line 87, in run
+    task(*args, **kwargs)
+  File "main.py", line 211, in send_message
+    db.delete_current_attach(chat_id)
+  File "/home/tepes/PycharmProjects/webnoid/service.py", line 152, in delete_current_attach
+    for data in self.cursor:
+psycopg2.InterfaceError: cursor already closed
+INFO:root:user (id=502303328) add geo ()
+INFO:root:user (id=502303328) add info ()
+INFO:root:user (id=502303328) add img ()
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+2022-04-10 11:12:09,714 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-10 11:12:14,683 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-10 11:13:18,308 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-10 11:13:23,445 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-10 11:13:28,597 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-04-10 11:13:35,780 (__init__.py:688 MainThread) ERROR - TeleBot: "A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running

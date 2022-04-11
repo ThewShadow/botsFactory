@@ -3,50 +3,14 @@ import settings
 from telebot import types
 import os
 import json
-import smtplib, ssl
-from service import db
-import email
-from email.mime.multipart import MIMEMultipart
-from email.mime.multipart import MIMEBase
-from email.mime.text import MIMEText
-from email import encoders
-from email.utils import formataddr
+import service
 import os
+import sys
+import service
+import re
 
-db = db()
+db = service.DB()
 bot = telebot.TeleBot(settings.TELEGRAM_API_TOKEN)
-TEST = True
-
-def send_report(chat_id, message):
-    msg = MIMEMultipart()
-    msg['Subject'] = 'Пожежа'
-    msg['From'] = formataddr(('@FireReportBot', settings.SENDER_MAIL))
-    msg['To'] = settings.SENDER_MAIL
-
-    part = MIMEBase('application', "octet-stream")
-    part.set_payload(open(message['img'], "rb").read())
-    encoders.encode_base64(part)
-    part.add_header('Content-Disposition', f'attachment; filename="{message["img"]}"')
-
-    msg.attach(part)
-
-    text_message = f'''
-        <b>Пожежа за координатами:</b> <p>{message['geo']}</p> \n
-        
-        <b>Інформація від відправника:</b> <p>{message['info']}</p>   
-    '''
-    msg.attach(MIMEText(text_message, "html"))
-
-    receiver_email = db.get_email(chat_id)
-    if not receiver_email:
-        return
-
-    context = ssl.create_default_context()
-    with smtplib.SMTP_SSL(settings.SMTP_SERVER, settings.SMTP_PORT, context=context) as server:
-        server.login(settings.SENDER_MAIL, settings.SMTP_PASS)
-        server.sendmail(settings.SENDER_MAIL, receiver_email, msg.as_string())
-        os.remove(message["img"])
-
 
 @bot.message_handler(content_types=['document', 'photo'])
 def data_processing(message):
@@ -60,42 +24,25 @@ def data_processing(message):
         file = message.document
     else:
         file = message.photo[0]
+
     try:
         """Скачивание файл по айди """
-        r = bot.get_file(file.file_id)
+        info = bot.get_file(file.file_id)
 
-        ftype = r.file_path.split('.')
-        ftype = ftype[len(ftype)-1]
-        if ftype != 'png' and ftype != 'jpg':
+        type = service.get_doc_type(info.file_path)
+        if type != 'png' and type != 'jpg':
             bot.send_message(message.chat.id, 'Не корректний тип файлу')
             return
 
-        file = bot.download_file(r.file_path)
-
-        """Создание папки для хранения файла"""
-        arr = r.file_path.split('/')
-        dir = 'static/'+arr[0]
-        if os.path.exists(dir) == False:
-            os.mkdir(dir)
-
-        """Запись бинарника в файл"""
-        path = 'static/' + r.file_path
-        with open(path, 'wb') as f:
-            f.write(file)
-
-        """Отправка файла пользователю"""
-        file = open(path, 'rb')
-        file.close()
-
+        file = bot.download_file(info.file_path)
+        path = service.save_document(info, file)
         db.set_img(chat_id, path)
 
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 
-
         button1 = types.KeyboardButton('Інформаця відсутня')
         markup.add(button1)
         add_cancel_button(markup)
-
 
         bot.send_message(message.chat.id,
                          'По можливості додайте більше інформації про порушника (ПІБ, номер телефону і т.д)',
@@ -103,7 +50,7 @@ def data_processing(message):
 
         db.set_state(message.chat.id, 'gettinginfo')
 
-    except :
+    except:
         bot.send_message(chat_id, 'Ойой, щось пішло не так і ми не змогли виконати Ваш запит((')
 
 
@@ -145,11 +92,11 @@ def send_message(message):
 
         if message.text == 'Надіслати репорт' and current_state == 'reportcomplete':
             db.set_state(chat_id, 'reportfinished')
-            report = db.get_current_report(chat_id)
+            data = db.get_current_report(chat_id)
             markup = get_common_markup()
+            email = db.get_email(chat_id)
             try:
-                send_report(chat_id, report)
-
+                service.send_report(data, email)
                 bot.send_message(chat_id, 'Репорт успішно відправлено! Дякуємо за допомогу!',
                                  reply_markup=markup)
             except:
@@ -214,15 +161,39 @@ def send_message(message):
 
             markup = get_common_markup()
             bot.send_message(chat_id, 'Репорт відмінено', reply_markup=markup)
+        elif message.text == 'Підтримати проект':
+
+            db.set_state(chat_id, 'inputamount')
+            bot.send_message(chat_id, 'Вкажіть сумму якою Ви хочете підтримати проект:')
+
+        elif current_state == 'inputamount':
+
+            if re.search('[0-9]', message.text):
+                amount = message.text
+                ref_invoice = service.create_invoice(amount, settings.LIQPAY_PUBLIC_KEY, settings.LIQPAY_PRIVATE_KEY)
+
+                if ref_invoice is None:
+                    bot.send_message(chat_id, 'Сталась помилка при генерації посилання')
+                    return
+
+                response = f'Перейдіть за посиланням для переказу коштів на підтримку проекту {ref_invoice}'
+                bot.send_message(chat_id, response)
+            else:
+                bot.send_message(chat_id, 'Ви вказали невірну сумму')
 
         else:
             bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( '
                                       'Спробуйте щось інше, або скористайтесь командою /start')
 
+
+
 def get_common_markup():
     but1 = types.KeyboardButton('Повідомити про пожежу')
+    but2 = types.KeyboardButton('Підтримати проект')
+
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(but1)
+    markup.add(but2)
     return markup
 
 def add_cancel_button(markup):

@@ -39,7 +39,19 @@ def send_message(message):
     if message.chat.type == 'private':
         current_state = db.get_state(id=message.chat.id)
 
-        if 'Надіслати репорт' in message.text and current_state == 'reportcomplete':
+        if 'Відміна' in message.text and \
+             (current_state == 'selectpayment' or current_state == 'inputamount'):
+
+            clear_user_data(id=chat_id)
+            markup = get_common_markup()
+            bot.send_message(chat_id, 'Донат відмінено', reply_markup=markup)
+
+        elif 'Відміна' in message.text and current_state != '':
+            clear_user_data(id=chat_id)
+            markup = get_common_markup()
+            bot.send_message(chat_id, 'Репорт відмінено', reply_markup=markup)
+
+        elif 'Надіслати репорт' in message.text and current_state == 'reportcomplete':
             data = db.get_current_report(id=chat_id)
             markup = get_common_markup()
             email = db.get_email(id=chat_id)
@@ -88,18 +100,20 @@ def send_message(message):
 
         elif 'Підтримати проект' in message.text:
             db.set_state(id=chat_id, state='selectpayment')
-            mkp = types.ReplyKeyboardMarkup(resize_keyboard=True)
+            markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
             for title in service.PAYMENT_SERVICES:
                 btn = types.KeyboardButton(title)
-                mkp.add(btn)
-            add_cancel_button(mkp)
-            bot.send_message(chat_id, 'Виберіть варіант донату',  reply_markup=mkp)
+                markup.add(btn)
+            add_cancel_button(markup)
+            bot.send_message(chat_id, 'Виберіть варіант донату',  reply_markup=markup)
 
         elif message.text in service.PAYMENT_SERVICES and current_state == 'selectpayment':
             db.set_payment_method(id=chat_id, payment_method=message.text)
             db.set_state(id=chat_id, state='inputamount')
+            markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+            add_cancel_button(markup)
             bot.send_message(chat_id, 'Вкажіть сумму якою Ви хочете підтримати проект:',
-                             reply_markup=types.ReplyKeyboardRemove())
+                             reply_markup=markup)
 
         elif current_state == 'inputamount':
             amount = message.text
@@ -129,17 +143,8 @@ def send_message(message):
 
                 elif payment_method == 'easypay':
                     bot.send_message(chat_id, msg_pay_not_work, reply_markup=get_common_markup())
-
-        elif 'Відміна' in message.text and current_state == 'selectpayment':
-            clear_user_data(id=chat_id)
-            markup = get_common_markup()
-            bot.send_message(chat_id, 'Донат відмінено', reply_markup=markup)
-
-        elif 'Відміна' in message.text and current_state != '':
-            clear_user_data(id=chat_id)
-            markup = get_common_markup()
-            bot.send_message(chat_id, 'Репорт відмінено', reply_markup=markup)
-
+            else:
+                bot.send_message(chat_id, 'Треба ввести число')
 
         else:
             bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( '

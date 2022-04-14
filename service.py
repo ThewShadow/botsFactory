@@ -14,7 +14,7 @@ from email.utils import formataddr
 import smtplib
 import ssl
 import telebot
-from PIL import Image
+
 
 logging.basicConfig()
 

@@ -200,7 +200,7 @@ def data_processing(message):
 
 def get_common_markup():
     but1 = types.KeyboardButton('🔔 Повідомити про пожежу')
-    but2 = types.KeyboardButton('Підтримати проект')
+    but2 = types.KeyboardButton('💸 Підтримати проект')
 
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(but1)

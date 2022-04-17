@@ -22,4 +22,5 @@ BITCOIN_PAYMENT_KEY = 'qqjzw8ggm3srt420ewz24kg594gz05y5ku64gqnexa'
 LIQPAY_PUBLIC_KEY = os.getenv('LIQPAY_PUBLIC_KEY')
 LIQPAY_PRIVATE_KEY = os.getenv('LIQPAY_PRIVATE_KEY')
 
+LOGFILE_PATH = 'logs.log'
 

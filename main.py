@@ -1,19 +1,17 @@
+import os
 import telebot
 import settings
 from telebot import types
-import os
-import json
-import service
-import os
-import sys
 import service
 import re
-import socket
 import logging
+import base64
+import tempfile
 
-logging.basicConfig(filename="newfile.log",
-                    format='%(asctime)s %(message)s',
-                    filemode='w')
+logging.basicConfig(level='INFO', filename=settings.LOGFILE_PATH)
+logger = logging.getLogger()
+
+
 
 db = service.DB()
 db.create_tables()
@@ -56,11 +54,12 @@ def send_message(message):
             markup = get_common_markup()
             email = db.get_email(id=chat_id)
             try:
+                db.add_user_report(id=data['id'], img=data['img'], email=data['email'], info=data['info'], geo=data['geo'])
                 service.send_report(data=data, mail=email)
                 bot.send_message(chat_id, 'Репорт успішно відправлено! Дякуємо за допомогу!', reply_markup=markup)
                 db.set_state(id=chat_id, state='')
             except Exception as e:
-                logging.critical(e)
+                logger.critical(e)
                 bot.send_message(chat_id, 'Нажаль сталася помилка при надсилані репорту. Спробуйте пізніше',
                                  reply_markup=markup)
 
@@ -145,6 +144,18 @@ def send_message(message):
                     bot.send_message(chat_id, msg_pay_not_work, reply_markup=get_common_markup())
             else:
                 bot.send_message(chat_id, 'Треба ввести число')
+        elif 'Мої репорти' in message.text:
+
+            cursor = db.get_user_reports(id=chat_id)
+            if cursor.rowcount:
+                for i in cursor:
+                    file_path = i[5]
+                    with open(file_path, 'rb') as photo:
+                        bot.send_photo(chat_id, photo)
+                    str_report = f'ІД: {i[0]}\nДАТА: {i[4]}\nГЕО: {i[1]}\nІНФО: {i[2]}\nПОШТА: {i[3]}'
+                    bot.send_message(chat_id, str(str_report))
+            else:
+                bot.send_message(chat_id, 'У Вас ще немає жодного репорту')
 
         else:
             bot.send_message(chat_id, 'Нажаль, я не розумію цю команду( '
@@ -199,17 +210,20 @@ def data_processing(message):
         db.set_state(id=message.chat.id, state='gettinginfo')
 
     except Exception as e:
-        logging.critical(e)
+        logger.critical(e)
         bot.send_message(chat_id, 'Ойой, щось пішло не так і ми не змогли виконати Ваш запит((')
 
 
 def get_common_markup():
     but1 = types.KeyboardButton('🔔 Повідомити про пожежу')
     but2 = types.KeyboardButton('💸 Підтримати проект')
+    but3 = types.KeyboardButton('Мої репорти')
 
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(but1)
     markup.add(but2)
+    markup.add(but3)
+
     return markup
 
 
@@ -222,17 +236,6 @@ def clear_user_data(id):
     db.clear_user_data(id=id)
     db.delete_user_attach(id=id)
 
-
-USER_CASES = {
-    'START_REPORT': None,
-    'FINISH_REPORT': None,
-    'INPUT_EMAIL': None,
-    'INPUT_PHOTO': None,
-    'INPUT_INFO': None,
-    'INPUT_MAIL': None,
-    'SELECT_PAYMENTS': None,
-    'INPUT_AMOUNT': None
-}
 
 if __name__ == '__main__':
     print('bot is started')

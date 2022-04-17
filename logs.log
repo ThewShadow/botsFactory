@@ -1,0 +1,100 @@
+CRITICAL:root:division by zero
+CRITICAL:root:division by zero
+CRITICAL:root:division by zero
+CRITICAL:root:division by zero
+CRITICAL:root:division by zero
+CRITICAL:root:division by zero
+CRITICAL:root:division by zero
+CRITICAL:root:division by zero
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+INFO:root:user (id=502303328) add img (static/documents/file_14.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add info (Йцу)
+INFO:root:user (id=502303328) moved to next state (gettingemail)
+INFO:root:user (id=502303328) moved to next state (reportcomplete)
+INFO:root:user (id=502303328) add email (zvichayniy.vick@gmail.com)
+CRITICAL:root:name 'MIMEBase' is not defined
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+INFO:root:user (id=502303328) add img (static/documents/file_15.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add info (Інформаця відсутня)
+INFO:root:user (id=502303328) moved to next state (gettingemail)
+INFO:root:user (id=502303328) moved to next state (reportcomplete)
+INFO:root:user (id=502303328) add email (zvichayniy.vick@gmail.com)
+CRITICAL:root:name 'MIMEBase' is not defined
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+INFO:root:user (id=502303328) add img (static/documents/file_15.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add info (Інформаця відсутня)
+INFO:root:user (id=502303328) moved to next state (gettingemail)
+INFO:root:user (id=502303328) moved to next state (reportcomplete)
+INFO:root:user (id=502303328) add email (zvichayniy.vick@gmail.com)
+CRITICAL:root:name 'MIMEBase' is not defined
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: IMAGE_PROCESS_FAILED
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) add img (static/documents/file_15.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add img (static/documents/file_15.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add info (Інформаця відсутня)
+INFO:root:user (id=502303328) moved to next state (gettingemail)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state (reportcomplete)
+INFO:root:user (id=502303328) add email (zvichayniy.vick@gmail.com)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state ()
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+INFO:root:user (id=502303328) add img (static/documents/file_15.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add info (Інформаця відсутня)
+INFO:root:user (id=502303328) moved to next state (gettingemail)
+INFO:root:user (id=502303328) moved to next state (reportcomplete)
+INFO:root:user (id=502303328) add email (zvichayniy.vick@gmail.com)
+INFO:root:user (id=502303328) moved to next state ()
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+INFO:root:user (id=502303328) add img (static/documents/file_14.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add info (Інформаця відсутня)
+INFO:root:user (id=502303328) moved to next state (gettingemail)
+INFO:root:user (id=502303328) moved to next state (reportcomplete)
+INFO:root:user (id=502303328) add email (zvichayniy.vick@gmail.com)
+INFO:root:user (id=502303328) moved to next state ()
+INFO:root:user (id=502303328) moved to next state (gettinglocation)
+INFO:root:user (id=502303328) add geo (20.659324, -11.406255)
+INFO:root:user (id=502303328) moved to next state (gettingimg)
+INFO:root:user (id=502303328) add img (static/photos/file_16.jpg)
+INFO:root:user (id=502303328) moved to next state (gettinginfo)
+INFO:root:user (id=502303328) add info (Інформаця відсутня)
+INFO:root:user (id=502303328) moved to next state (gettingemail)
+INFO:root:user (id=502303328) moved to next state (reportcomplete)
+INFO:root:user (id=502303328) add email (zvichayniy.vick@gmail.com)
+INFO:root:user (id=502303328) moved to next state ()

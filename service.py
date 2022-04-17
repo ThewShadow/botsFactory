@@ -1,22 +1,22 @@
 import logging
 import settings
 import os
-import threading
 import psycopg2
-from psycopg2 import sql
 from liqpay import LiqPay
-import email
 from email.mime.multipart import MIMEMultipart
-from email.mime.multipart import MIMEBase
 from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
 from email import encoders
 from email.utils import formataddr
 import smtplib
 import ssl
-import telebot
+from datetime import datetime
+import base64
 
 
-logging.basicConfig()
+logging.basicConfig(level='INFO', filename=settings.LOGFILE_PATH)
+logger = logging.getLogger()
+
 
 
 def query(func):
@@ -25,11 +25,15 @@ def query(func):
             res = func(self, **kwargs)
             self.conn.commit()
             return res
-        except Exception as e:
+
+        except psycopg2.OperationalError as e:
             self.conn = psycopg2.connect(dbname=settings.DB_NAME, user=settings.DB_USER,
                                          host=settings.DB_HOST, password=settings.DB_PASS)
             self.cursor = self.conn.cursor()
-            logging.critical(e)
+            logger.critical(e)
+
+        except Exception as e:
+            logger.critical(e)
 
     return wrapper
 
@@ -40,8 +44,8 @@ class DB():
             self.conn = psycopg2.connect(dbname=settings.DB_NAME, user=settings.DB_USER,
                                          host=settings.DB_HOST, password=settings.DB_PASS)
             self.cursor = self.conn.cursor()
-        except Exception as e:
-            logging.critical(e)
+        except psycopg2.OperationalError as e:
+            logger.critical(e)
             raise e
 
     def disconnect(self):
@@ -51,8 +55,8 @@ class DB():
 
             if self.conn:
                 self.conn.close()
-        except Exception as e:
-            logging.critical(e)
+        except psycopg2.OperationalError as e:
+            logger.critical(e)
 
     @query
     def create_tables(self):
@@ -68,6 +72,18 @@ class DB():
             );  
         ''')
 
+        self.cursor.execute('''
+                CREATE TABLE IF NOT EXISTS REPORTS  (
+                id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+                user_id integer,
+                geo varchar,
+                img varchar,
+                info varchar,
+                email varchar,
+                date timestamp          
+            );  
+        ''')
+
     @query
     def user_create(self, **kwargs):
         user_exists = False
@@ -77,7 +93,7 @@ class DB():
 
         if not user_exists:
             self.cursor.execute('INSERT INTO USERS (id) VALUES (%s);', (kwargs['id'],))
-            logging.info(f"user is create (id={kwargs['id']})")
+            logger.info(f"user is create (id={kwargs['id']})")
 
     @query
     def get_payment_method(self, **kwargs):
@@ -100,27 +116,27 @@ class DB():
     @query
     def set_geo(self, **kwargs):
         self.cursor.execute('UPDATE USERS SET geo = %s WHERE id = %s ;', (kwargs['geo'], kwargs['id']))
-        logging.info(f"user (id={kwargs['id']}) add geo ({kwargs['geo']})")
+        logger.info(f"user (id={kwargs['id']}) add geo ({kwargs['geo']})")
 
     @query
     def set_img(self, **kwargs):
         self.cursor.execute('UPDATE USERS SET img = %s WHERE id = %s ;', (kwargs['img'], kwargs['id']))
-        logging.info(f"user (id={kwargs['id']}) add img ({kwargs['img']})")
+        logger.info(f"user (id={kwargs['id']}) add img ({kwargs['img']})")
 
     @query
     def set_info(self, **kwargs):
         self.cursor.execute('UPDATE USERS SET info = %s WHERE id = %s ;', (kwargs['info'], kwargs['id']))
-        logging.info(f"user (id={kwargs['id']}) add info ({kwargs['info']})")
+        logger.info(f"user (id={kwargs['id']}) add info ({kwargs['info']})")
 
     @query
     def set_state(self, **kwargs):
         self.cursor.execute(f'UPDATE USERS SET state = %s WHERE id = %s ;', (kwargs['state'], kwargs['id']))
-        logging.info(f"user (id={kwargs['id']}) moved to next state ({kwargs['state']})")
+        logger.info(f"user (id={kwargs['id']}) moved to next state ({kwargs['state']})")
 
     @query
     def set_email(self, **kwargs):
         self.cursor.execute(f'UPDATE USERS SET email = %s WHERE id = %s ;', (kwargs['email'], kwargs['id']))
-        logging.info(f"user (id={kwargs['id']}) add email ({kwargs['email']})")
+        logger.info(f"user (id={kwargs['id']}) add email ({kwargs['email']})")
 
     @query
     def set_payment_method(self, **kwargs):
@@ -137,7 +153,9 @@ class DB():
             geo = data[2]
             img = data[3]
             info = data[4]
-            report = {'geo': geo, 'img': img, 'info': info}
+            email = data[5]
+
+            report = {'geo': geo, 'img': img, 'info': info, 'email': email, 'id': kwargs['id']}
             break
         return report
 
@@ -152,6 +170,18 @@ class DB():
     @query
     def clear_user_data(self, **kwargs):
         self.cursor.execute("UPDATE USERS SET geo='', img='', info='', email='' WHERE id = %s ;", (kwargs['id'],))
+
+    @query
+    def add_user_report(self, **kwargs):
+        today = datetime.now()
+        self.cursor.execute('INSERT INTO REPORTS (user_id, geo, img, info, email, date) VALUES (%s, %s, %s, %s, %s, %s);',
+                            (kwargs['id'], kwargs['geo'], kwargs['img'], kwargs['info'], kwargs['email'], today))
+
+    @query
+    def get_user_reports(self, **kwargs):
+        self.cursor.execute('SELECT id, geo, info, email, date, img FROM REPORTS WHERE user_id = %s ;', (kwargs['id'],))
+        return self.cursor
+
 
 
 def send_report(data, mail):
@@ -181,7 +211,7 @@ def send_report(data, mail):
     with smtplib.SMTP_SSL(settings.SMTP_SERVER, settings.SMTP_PORT, context=context) as server:
         server.login(settings.SENDER_MAIL, settings.SMTP_PASS)
         server.sendmail(settings.SENDER_MAIL, mail, msg.as_string())
-        os.remove(data["img"])
+        #os.remove(data["img"])
 
 
 def get_full_file_path(info):

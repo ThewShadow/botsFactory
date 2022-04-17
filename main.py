@@ -1,3 +1,4 @@
+import datetime
 import os
 import telebot
 import settings
@@ -142,20 +143,23 @@ def send_message(message):
 
                 elif payment_method == 'easypay':
                     bot.send_message(chat_id, msg_pay_not_work, reply_markup=get_common_markup())
-
-                db.set_state(id=chat_id, state='')
             else:
                 bot.send_message(chat_id, 'Треба ввести число')
+
+            db.set_state(id=chat_id, state='')
+
         elif 'Мої репорти' in message.text:
 
             cursor = db.get_user_reports(id=chat_id)
             if cursor.rowcount:
                 for i in cursor:
                     file_path = i[5]
+                    date = i[4].strftime('%d-%m-%Y')
+                    str_report = f'ДАТА: {date}\nГЕО: {i[1]}\nІНФО: {i[2]}\nПОШТА: {i[3]}'
                     with open(file_path, 'rb') as photo:
-                        bot.send_photo(chat_id, photo)
-                    str_report = f'ІД: {i[0]}\nДАТА: {i[4]}\nГЕО: {i[1]}\nІНФО: {i[2]}\nПОШТА: {i[3]}'
-                    bot.send_message(chat_id, str(str_report))
+                        bot.send_photo(chat_id, photo=photo, caption=str_report)
+
+
             else:
                 bot.send_message(chat_id, 'У Вас ще немає жодного репорту')
 
@@ -237,7 +241,7 @@ def add_cancel_button(markup):
 def clear_user_data(id):
     db.clear_user_data(id=id)
     db.delete_user_attach(id=id)
-
+    db.set_state(id=id, state='')
 
 if __name__ == '__main__':
     print('bot is started')

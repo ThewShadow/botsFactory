@@ -142,7 +142,8 @@ def send_message(message):
 
                 elif payment_method == 'easypay':
                     bot.send_message(chat_id, msg_pay_not_work, reply_markup=get_common_markup())
-                    db.set_state(id=chat_id, state='')
+
+                db.set_state(id=chat_id, state='')
             else:
                 bot.send_message(chat_id, 'Треба ввести число')
         elif 'Мої репорти' in message.text:

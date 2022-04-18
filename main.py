@@ -243,6 +243,18 @@ def clear_user_data(id):
     db.delete_user_attach(id=id)
     db.set_state(id=id, state='')
 
+
+def run():
+    try:
+        bot.polling(none_stop=True)
+    except Exception as e:
+        logger.critical(e)
+        run()
+
 if __name__ == '__main__':
     print('bot is started')
-    bot.polling(none_stop=True)
+    run()
+
+
+
+

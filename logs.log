@@ -113,3 +113,48 @@ INFO:root:user (id=502303328) moved to next state (selectpayment)
 INFO:root:user (id=502303328) select payment method (bitcoin)
 INFO:root:user (id=502303328) moved to next state (inputamount)
 INFO:root:user (id=502303328) moved to next state ()
+INFO:root:user (id=502303328) moved to next state (selectpayment)
+CRITICAL:root:no results to fetch
+INFO:root:user (id=502303328) select payment method (bitcoin)
+INFO:root:user (id=502303328) moved to next state (inputamount)
+INFO:root:user (id=502303328) moved to next state ()
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state ()
+INFO:root:user (id=502303328) moved to next state (selectpayment)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) select payment method (bitcoin)
+INFO:root:user (id=502303328) moved to next state (inputamount)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state ()
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state (selectpayment)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+CRITICAL:root:no results to fetch
+INFO:root:user (id=502303328) select payment method (bitcoin)
+INFO:root:user (id=502303328) moved to next state (inputamount)
+INFO:root:user (id=502303328) moved to next state ()
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state ()
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state (selectpayment)
+INFO:root:user (id=502303328) select payment method (bitcoin)
+INFO:root:user (id=502303328) moved to next state (inputamount)
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:root:user (id=502303328) moved to next state ()
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running

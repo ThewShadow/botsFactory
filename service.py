@@ -256,6 +256,8 @@ def create_invoice(amount, public_key, private_key):
         return res['href']
 
 
+
+
 PAYMENT_SERVICES = [
     'liqpay',
     'paypal',

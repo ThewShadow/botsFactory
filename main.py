@@ -122,7 +122,11 @@ def send_message(message):
                 msg_pay_not_work = f'Оплата({payment_method}) поки не доступна'
 
                 if payment_method == 'liqpay':
-                    ref_invoice = service.create_invoice(amount, settings.LIQPAY_PUBLIC_KEY, settings.LIQPAY_PRIVATE_KEY)
+                    try:
+                        ref_invoice = service.create_invoice(amount, settings.LIQPAY_PUBLIC_KEY, settings.LIQPAY_PRIVATE_KEY)
+                    except Exception as e:
+                        logger.critical(e)
+
                     if ref_invoice is not None:
                         bot.send_message(
                             chat_id,
@@ -245,11 +249,8 @@ def clear_user_data(id):
 
 
 def run():
-    try:
-        bot.polling(none_stop=True)
-    except Exception as e:
-        logger.critical(e)
-        run()
+    bot.infinity_polling()
+
 
 if __name__ == '__main__':
     print('bot is started')
